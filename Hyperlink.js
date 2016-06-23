@@ -9,6 +9,8 @@ import React from 'react';
 import {View, Text} from 'react-native';
 const linkify = require('linkify-it')();
 
+linkify.add('birdr:', 'http:') 
+
 const Hyperlink = React.createClass({
   propTypes: {
     onPress: React.PropTypes.func,
